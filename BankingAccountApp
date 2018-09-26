@@ -1,3 +1,3 @@
 This app is used to handle different banking functionalities like, opening an account, making a deposit, withrawing money and thransferring some money to others.
-This Java project is implement with the help of java collection framework, inheritance, Interfaces, object oriented functionalities, data structures etc.
+This Java project is implement with the help of java collection framework, inheritance, Interfaces, bufferReader, object oriented functionalities, data structures etc.
 This project is under implementation phase and needs few more features to add. The scope of this project is to implement multitreading, exception handeling, java concurrency etc.
