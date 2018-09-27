@@ -1,1 +1,43 @@
+/*Simple Program to perform Binary Search
+Name: Shweta
+Created Date: 25th Sept 2018
+*/
+
+public class SearchingAlgo {
+
+    public int binarySearch(int [] arr,int low, int high, int n){
+
+            if(high>=low) {
+                int mid =   (high  + low) / 2;
+                if (n < arr[mid]) {
+                    return binarySearch(arr, low, mid - 1, n);
+                } else if (n > arr[mid]) {
+                    return binarySearch(arr, mid + 1, high, n);
+                } else if (n == arr[mid]) {
+                    return mid;
+                }
+            }
+        return -1;
+    }
+
+
+    public static void main(String args[]){
+        SearchingAlgo obj = new SearchingAlgo();
+        
+        //Enter array of your choice
+        int[] arr= new int[]{1,2,3,4,5,6,8,9,11,45,67,89};
+        int n=11;// element to search
+        
+        //Calling BInary Search method
+        int resultBinary = obj.binarySearch(arr, 0, arr.length-1, n);
+        if (resultBinary ==-1) {
+            System.out.println("Element not present in Binary Search");
+        }
+         else{
+                System.out.println("Index: " + resultBinary);
+            }
+    }
+}
+
+
 
